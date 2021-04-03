@@ -1,0 +1,31 @@
+body{
+    /* background-color: rgb(214, 144, 15); */
+    background: url('images/wallpaper.jpeg') no-repeat center fixed;
+    background-size: cover;
+}
+div{
+    text-align: center;
+}
+
+h1{    
+    text-align: center;
+    font-size: 60px;
+    padding-top: 150px;
+}
+#btn{
+    font-size: x-large;
+    background-color: rgb(94, 84, 84);
+    border-radius: 0.6rem;
+    width: 7em;
+    height: 3em;
+    opacity: 1;
+    transition: 0.3s;
+}
+.btn:hover {opacity: 0.6}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+}
+
+

@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+/* Nav Bar */
+
+header{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+}
+#logo{
+    cursor: pointer;
+    font-size: 200%;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+  letter-spacing: 3px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    color: #1a1a1a;
+  }
+  .dropdown-content {
+    min-width: 130px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }  
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  .dropdown-content a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    font-size: 20PX;
+    color: rgb(104, 10, 10);
+  }
+
+
+  /* Slide-Show */
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  /* .text {
+    background: black;
+    opacity: 0.8;
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+  } */
+
+  
+  /* The dots/bullets/indicators */
+  /* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } */
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+  }
+  
+  /* @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  } */
+
+
+/* About Section  */
+
+span{
+    font-size: 50px;
+}
+#main{
+    position: relative;
+}
+ #bg-image{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    filter: blur(8px);
+}
+.bg-text{
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    color: rgb(2, 1, 1);
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 300px;
+    right: 50px;
+    left: 50px;
+    top: 200px;
+}
+
+
+/* Images section */
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 5%;
+}
+.images{
+    display: flex;
+}
+.container{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    /* float: left; */
+    width: 50%;
+}
+.container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+
+  footer{
+      padding: 30px;
+      text-align: center;
+  }
+
