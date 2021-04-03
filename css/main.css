@@ -33,7 +33,7 @@ body{
       align-items: center;
     }
     .nav-links{
-      
+
     }
 }
 
@@ -209,6 +209,14 @@ span{
     margin-left: 50px;
     margin-right: 50px;
     margin: 0 50px 50px 50px;
+}
+@media screen and (max-width: 480px){
+  #main{
+    font-size: 1rem;
+  }
+  .main-text{
+    font-size: 2px;
+  }
 }
 
 footer{
