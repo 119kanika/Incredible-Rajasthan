@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -43,6 +49,7 @@
                     </div>
                 </div>
             </li>
+			<li class="respo"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
 
@@ -185,6 +192,14 @@
 -->
 
     <script src="main.js"></script>
+	<script>
+      $(document).ready(function(){
+        $('.respo').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
 
 </body>
 
