@@ -13,29 +13,14 @@
 
 <body>
 
-    <!-- <nav class="navigation container">
-        <div class="nav-head">Incredible Rajasthan</div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">Places</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="#projects">Art & Culture</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="#about-me">Stories</a>
-            </li>
-        </ul>
-    </nav> -->
-
-
 
     <nav id="navbar">
         <div id="logo">Incredible Rajasthan</div>
         <ul class="nav-links">
             <li class="items">
-               <div class="dropdown">
-                    Places
+                <div class="dropdown button">
+                   <span>Places</span>
+                   <div class="sun"></div>
                     <div class="dropdown-content">
                         <a href="#">Jaipur</a>
                         <a href="#">Jodhpur</a>
@@ -45,21 +30,10 @@
                     </div>
                 </div>
             </li>
-            <li class="items"> 
-                <div class="dropdown">
-                    Art & Culture
-                    <div class="dropdown-content">
-                        <a href="#">Painting Art</a>
-                        <a href="#">Handicrafts</a>
-                        <a href="#">Dance & Drama</a>
-                        <a href="#">Music</a>
-                        <a href="#">Architecture</a>
-                    </div>
-                </div>
-            </li>
             <li class="items">
-                <div class="dropdown">
-                    Stories
+                <div class="dropdown button">
+                  <span>Stories </span>
+                  <div class="sun"></div>
                     <div class="dropdown-content">
                         <a href="#">Jaisalmer Fort</a>
                         <a href="#">Amber Fort</a>
@@ -109,18 +83,14 @@
 
     <br>
 
-    <!-- The dots/circles -->
-    <!-- <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div> -->
-
-
 
     <section class="hero">
-        <div id="main">
-            <h3>About</h3>
+        <h3>Welcome to Rajasthan</h3>
+        <hr>
+        <div id="main"> <h4>
+            <span> "Padharo Mahrey Des"</span><br>
+            <h4>Welcome to Our Land; it invites you to unravel its opulence and
+            unbeatable grandeur.</h4>
             <p class="main-text">
                 Rajasthan, meaning “The Abode of the Rajas,”
                 was formerly called Rajputana, “The Country of the
@@ -129,15 +99,17 @@
                 it comprised some two dozen princely states and
                 chiefships, the small British-administered province of
                 Ajmer-Merwara, and a few pockets of territory outside
-                the main boundaries. After 1947 the princely states and
-                chiefships were integrated into India in stages, and the
-                state took the name Rajasthan. It assumed its present form
-                on November 1, 1956, when the States Reorganization Act came
-                into force.
-                <br> <br>
-                <span> "Padharo Mahrey Des"</span>, Welcome to Our Land; it invites you to unravel its opulence and
-                unbeatable grandeur.
+                the main boundaries.
             </p>
+            <p id="extra_content" class="extra_content main-text">After 1947 the princely states and chiefships were
+                integrated
+                into India in stages, and the state took the name
+                Rajasthan. It assumed its present form on November
+                1, 1956, when the States Reorganization Act came
+                into force.
+            </p>
+            <button id="read_more" class="read_more">Show More</button>
+
         </div>
     </section>
 
@@ -195,25 +167,7 @@
     </section> 
 -->
 
-
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-    </script>
+<script src="main.js"></script>
 
 </body>
 
