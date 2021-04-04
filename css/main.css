@@ -219,13 +219,34 @@ span{
     margin: 0 50px 50px 50px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 650px){
   #main h3{
     font-size: 30px;
   }
   .main-text{
-    font-size: 25px;
+    font-size: 20px;
   }
+  .extra_content {
+    display: none;
+  }
+  #read_more {
+    display: block;
+  }
+  #read_more{
+    
+    margin-left: 45%;
+    /* justify-content: center; */
+    text-align: center;
+  }
+}
+
+.read_more  {
+  display: none;
+}
+
+.show {
+   display: block!important;
+}
 }
 
 footer{
