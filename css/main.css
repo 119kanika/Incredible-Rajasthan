@@ -235,8 +235,12 @@ span{
     padding-bottom: 3%;
     font-size: 2.1rem;
   }
+  .hero h4{
+    font-size: 1.2rem;
+  }
   .main-text{
     font-size: 20px;
+    margin: 50px 40px 50px 40px;
   }
   .extra_content {
     display: none;
