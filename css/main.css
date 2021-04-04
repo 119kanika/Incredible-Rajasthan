@@ -224,6 +224,10 @@ span{
     margin: 50px 50px 50px 50px;
 }
 
+.read_more  {
+  display: none;
+}
+
 @media screen and (max-width: 650px){
   .hero h3{
     text-align: center;
@@ -250,13 +254,9 @@ span{
     border: 2px solid;
     transition: all 1s ease-in-out;
     border-image: linear-gradient(#e9af33, orange) 30;
-    margin-left: 45%;
+    margin-left: 40%;
     text-align: center;
   }
-}
-
-.read_more  {
-  display: none;
 }
 
 .show {
