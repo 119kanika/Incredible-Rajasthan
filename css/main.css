@@ -326,12 +326,11 @@ h2{
   .images{
       display: flex;
       flex-wrap: wrap;
-      margin: 6px;
-      /* margin-left: 8em;
-      margin-right: 8em; */
-  }
-  .container{
-    
+      flex-direction: column;
+      display: block;
+      margin-left: 75px;
+      margin-right: auto;
+  width: 150%;
   }
 }
 .container{
@@ -411,6 +410,10 @@ h2{
   
   .fadeIn-bottom{
     top: 80%;
+  }
+  .read_more a{
+    text-decoration: none;
+    color: white;
   }
 
 
