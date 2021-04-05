@@ -237,7 +237,7 @@ span{
   font-family: "Sacramento", cursive;
   font-size: 28px;
   transition: all 0.3s ease-in-out;
-  background: -webkit-linear-gradient(#ff8a2a, #3f3b03);
+  background: -webkit-linear-gradient(#e72806f3, #3d2a07e8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -257,6 +257,7 @@ span{
 
 @media screen and (max-width: 650px){
   .hero h3{
+    color: #522626;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 3%;
@@ -264,6 +265,7 @@ span{
   }
   .hero h4{
     font-size: 1.2rem;
+    color: #5c2f2f;
   }
   .main-text{
     font-size: 20px;
