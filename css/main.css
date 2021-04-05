@@ -277,7 +277,7 @@ span{
   #read_more {
     display: block;
   }
-  #read_more{
+  .read_more{
     width: 100px;
     height: 45px;
     color: white;
@@ -328,7 +328,7 @@ h2{
       flex-wrap: wrap;
       flex-direction: column;
       display: block;
-      margin-left: 75px;
+      margin-left: 55px;
       margin-right: auto;
   width: 150%;
   }
