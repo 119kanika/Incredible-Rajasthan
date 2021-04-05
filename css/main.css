@@ -66,17 +66,17 @@ nav ul li.respo{
 nav ul li.respo.hide i:before{
   content: '\f00d';
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 560px){
   #logo{
     
     align-items: center;
     /* padding: 5px; */
     cursor: pointer;
-    font-size: 120%;
+    font-size: 170%;
   }
   nav ul li.respo{
     display: inline;
-	float:right;
+	 float:left;
   }
  
 nav ul li.items{
