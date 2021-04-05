@@ -215,6 +215,7 @@ nav ul li.items{
   text-align: center;
   padding-top: 7%;
   padding-bottom: 1%;
+  color: #522626;
   /* padding-bottom: 7%; */
   font-size: 3rem;
 }
@@ -226,6 +227,7 @@ nav ul li.items{
   margin-right: auto;
 }
 .hero h4{
+  color: #5c2f2f;
   letter-spacing: 2px;
   font-size: 1.6rem;
   padding: 10px;
@@ -257,7 +259,6 @@ span{
 
 @media screen and (max-width: 650px){
   .hero h3{
-    color: #522626;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 3%;
@@ -265,7 +266,6 @@ span{
   }
   .hero h4{
     font-size: 1.2rem;
-    color: #5c2f2f;
   }
   .main-text{
     font-size: 20px;
@@ -305,19 +305,34 @@ footer{
 
 
 
-
-
-/* NOT IN USE FOR NOW  */
-
 /* Images section */
 
 h2{
+  color: #522626;
     text-align: center;
-    font-size: xx-large;
-    padding-top: 5%;
+    font-size: 40px;
+    padding: 5% 0 1% 0;
 }
 .images{
     display: flex;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+@media screen and (max-width: 650px){
+  h2{
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  .images{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 6px;
+      /* margin-left: 8em;
+      margin-right: 8em; */
+  }
+  .container{
+    
+  }
 }
 .container{
     padding: 1em 0;
